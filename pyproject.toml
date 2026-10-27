@@ -27,6 +27,11 @@ dev = ["pytest>=8"]
 [project.scripts]
 surfer-mcp = "surfer_mcp.server:main"
 
+[project.urls]
+Homepage = "https://github.com/office31/claude-surfer13-mcp"
+Repository = "https://github.com/office31/claude-surfer13-mcp"
+Issues = "https://github.com/office31/claude-surfer13-mcp/issues"
+
 [tool.setuptools.packages.find]
 where = ["src"]
 

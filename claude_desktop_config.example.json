@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "surfer": {
-      "command": "C:\\Users\\VOTRE_NOM\\surfer-mcp\\.venv\\Scripts\\python.exe",
+      "command": "C:\\Users\\VOTRE_NOM\\claude-surfer13-mcp\\.venv\\Scripts\\python.exe",
       "args": ["-m", "surfer_mcp"],
       "env": {
         "SURFER_MCP_WORKSPACE": "C:\\Users\\VOTRE_NOM\\Documents\\SurferMCP",

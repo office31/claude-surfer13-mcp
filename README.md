@@ -5,6 +5,8 @@ Serveur [MCP](https://modelcontextprotocol.io) local qui connecte **Claude** (Cl
 Il permet à Claude de piloter Surfer : interpoler des données XYZ en grille, produire des cartes structurales, tracer des **coupes géologiques**, générer des vues 3D et exporter les résultats en PNG, JPG, PDF, TIF, SVG ou EMF.
 
 > Testé avec Surfer **13.06.618** et Python 3.14 sous Windows 10/11.
+>
+> Dépôt : <https://github.com/office31/claude-surfer13-mcp>
 
 ## Fonctionnalités
 
@@ -24,8 +26,8 @@ Il permet à Claude de piloter Surfer : interpoler des données XYZ en grille, p
 ## Installation
 
 ```powershell
-git clone https://github.com/VOTRE_COMPTE/surfer-mcp.git
-cd surfer-mcp
+git clone https://github.com/office31/claude-surfer13-mcp.git
+cd claude-surfer13-mcp
 
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
@@ -48,7 +50,7 @@ python -c "import surfer_mcp; print('ok')"
 {
   "mcpServers": {
     "surfer": {
-      "command": "C:\\Users\\VOTRE_NOM\\surfer-mcp\\.venv\\Scripts\\python.exe",
+      "command": "C:\\Users\\VOTRE_NOM\\claude-surfer13-mcp\\.venv\\Scripts\\python.exe",
       "args": ["-m", "surfer_mcp"],
       "env": {
         "SURFER_MCP_WORKSPACE": "C:\\Users\\VOTRE_NOM\\Documents\\SurferMCP",
@@ -66,7 +68,7 @@ Un modèle est fourni : [`claude_desktop_config.example.json`](claude_desktop_co
 ## Configuration de Claude Code
 
 ```powershell
-claude mcp add surfer -e SURFER_MCP_WORKSPACE="C:\Users\VOTRE_NOM\Documents\SurferMCP" -- "C:\Users\VOTRE_NOM\surfer-mcp\.venv\Scripts\python.exe" -m surfer_mcp
+claude mcp add surfer -e SURFER_MCP_WORKSPACE="C:\Users\VOTRE_NOM\Documents\SurferMCP" -- "C:\Users\VOTRE_NOM\claude-surfer13-mcp\.venv\Scripts\python.exe" -m surfer_mcp
 ```
 
 Puis vérifiez avec `/mcp` dans Claude Code.
